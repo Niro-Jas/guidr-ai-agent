@@ -1,5 +1,5 @@
 ---
-name: daily_planner
+name: dailyplanner
 description: Generates structured daily plans, stores them in Git memory, and tracks user consistency over time.
 ---
 
