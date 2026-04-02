@@ -38,3 +38,6 @@
 
 ## 2026-03-29
 - talk with tom
+
+## 2026-04-02
+- Learn Python
