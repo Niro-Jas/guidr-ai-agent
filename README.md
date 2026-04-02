@@ -60,6 +60,15 @@ Students and developers can:
 
 ---
 
+## 🎯 Git-Native Agent Workflow
+
+- Automatically commits changes after every user action
+- Maintains persistent memory using Git history  
+- Sunykates GitClaw-style agent execution
+
+
+---
+
 ## 🌍 Language Support
 
 - English (primary)  
