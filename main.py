@@ -1,5 +1,10 @@
 # 🔹 Import libraries and modules
 from datetime import datetime
+import os
+
+def auto_commit(message):
+    os.system("git add .")
+    os.system(f'git commit -m "{message}"')
 
 # 🔹 Read previous plans (memory)
 def read_previous_plans():
@@ -40,6 +45,7 @@ def improve_resume():
     improved = f"Experienced in {text}, with strong problem-solving and practical implementation skills."
 
     print(improved) 
+    auto_commit("Improved resume content")
 
 
 # 🔹 Main function
@@ -55,6 +61,8 @@ def create_plan():
     # Save plan
     with open("memory/plans.md", "a") as f:
         f.write(plan)
+
+        auto_commit("Added new daily plan")
 
     print("\n✅ Plan saved successfully!")
 
