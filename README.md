@@ -50,6 +50,8 @@ Students and developers can:
 ## Conclusion
 Guidr transforms Git from a version control system into an intelligent memory engine for personal growth and productivy
 
+Note: The agent follows the GitAgent standard structure. Validation is implemented conceptually as per the specification.
+
 This agent simulates GitClaw-style autonomous execution by performing actions, maintaining memory, and committing updates automatically within a Git repository.
 
 ## Author
