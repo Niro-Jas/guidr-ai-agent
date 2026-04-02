@@ -4,7 +4,14 @@ import os
 
 def auto_commit(message):
     os.system("git add .")
-    os.system(f'git commit -m "{message}"')
+from datetime import datetime
+
+def auto_commit(action, details=""):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    commit_msg = f"[AGENT] {action} | {details} | {timestamp}"
+
+    os.system("git add .")
+    os.system(f'git commit -m "{commit_msg}"')
 
 # 🔹 Read previous plans (memory)
 def read_previous_plans():
@@ -45,7 +52,7 @@ def improve_resume():
     improved = f"Experienced in {text}, with strong problem-solving and practical implementation skills."
 
     print(improved) 
-    auto_commit("Improved resume content")
+    auto_commit("ResumeImproved", text)
 
 
 # 🔹 Main function
@@ -62,7 +69,7 @@ def create_plan():
     with open("memory/plans.md", "a") as f:
         f.write(plan)
 
-        auto_commit("Added new daily plan")
+        auto_commit("DailyPlanCreated", task)
 
     print("\n✅ Plan saved successfully!")
 

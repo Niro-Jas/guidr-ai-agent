@@ -15,3 +15,8 @@ skills:
   - daily_planner
 
 entrypoint: main.py
+
+gitclaw:
+  enabled: true
+  auto_commit: true
+  execution_mode: autonomous
