@@ -1,7 +1,8 @@
-spec_version: v1
+spec_version: "0.1.0"
 
-name: Guidr AI Agent
-description: AI agent for planning, resume improvement, and growth tracking using Git memory.
+name: guidr-agent
+version: 1.0.0
+description: "A Git-native AI agent for planning, tracking progress, and improving resumes using persistent Git memory"
 
 model:
   provider: openai
@@ -12,9 +13,16 @@ memory:
   auto_commit: true
 
 skills:
-  - daily_planner
+  - dailyplanner
+  - memorytracker
+  - resumeoptimizer
 
 entrypoint: main.py
+
+tags:
+  - git-agent
+  - productivity
+  - hackathon
 
 gitclaw:
   enabled: true
